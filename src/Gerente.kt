@@ -11,7 +11,7 @@ class Gerente(val bonus: Double, val excentoImpuestos: Boolean = false, nombre: 
     }
 
     override fun toString(): String {
-        return "${super.toString().dropLast(1)}, Bonus: $bonus, Excento de impuestos: ${if (excentoImpuestos) "Sí" else "No"}"
+        return "${super.toString()}, Bonus: $bonus, Excento de impuestos: ${if (excentoImpuestos) "Sí" else "No"}"
     }
 
 }
